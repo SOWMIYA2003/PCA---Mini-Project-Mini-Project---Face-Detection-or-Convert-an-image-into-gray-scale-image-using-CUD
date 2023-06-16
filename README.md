@@ -1,5 +1,29 @@
 # PCA-Mini-Project---Face-Detection-or-Convert-an-image-into-gray-scale-image-using-CUD
 Mini Project - Face Detection or Convert an image into gray scale image using CUDA GPU programming
+### AIM : 
+### PROCEDURE:
+
+#### STEP 1:
+Include the necessary header files, such as `stdio.h`, `stdlib.h`, and `windows.h` for Windows-specific timing.
+#### STEP 2:
+Define constants for the image dimensions, number of channels, and block size.
+#### STEP 3:
+Declare the kernel function `colorToBW` that converts the color image to black and white.
+#### STEP 4:
+In the `main` function:
+   - Specify the input and output image file names.
+   - Read the input image file into memory.
+   - Allocate memory for the output image.
+   - Allocate device memory for input and output images using `cudaMalloc`.
+   - Copy the input image data from host to device using `cudaMemcpy`.
+   - Set the grid and block dimensions for the kernel execution.
+   - Start the timer using `QueryPerformanceFrequency` and `QueryPerformanceCounter`.
+   - Launch the kernel function using `<<<dimGrid, dimBlock>>>` syntax.
+   - Copy the output image data from device to host using `cudaMemcpy`.
+   - Stop the timer and calculate the elapsed time.
+   - Write the output image to a file.
+   - Free the device and host memory.
+   - Print the completion message and the elapsed time.
 ### PROGRAM : 
 ```
 #include <stdio.h>
