@@ -1,6 +1,7 @@
 # PCA-Mini-Project---Face-Detection-or-Convert-an-image-into-gray-scale-image-using-CUD
 Mini Project - Face Detection or Convert an image into gray scale image using CUDA GPU programming
 ### AIM : 
+To write a CUDA C program to convert color image into grey scale image in GPU.
 ### PROCEDURE:
 
 #### STEP 1:
@@ -19,7 +20,7 @@ In the `main` function:
    - Set the grid and block dimensions for the kernel execution.
    - Start the timer using QueryPerformanceFrequency and QueryPerformanceCounter.
    - Launch the kernel function using <<<dimGrid, dimBlock>>> syntax.
-   - Copy the output image data from device to host using `cudaMemcpy`.
+   - Copy the output image data from device to host using cudaMemcpy.
    - Stop the timer and calculate the elapsed time.
    - Write the output image to a file.
    - Free the device and host memory.
@@ -139,4 +140,5 @@ int main()
 ![input](https://github.com/SOWMIYA2003/PCA---Mini-Project-Mini-Project---Face-Detection-or-Convert-an-image-into-gray-scale-image-using-CUD/assets/93427443/674ffc6f-6891-4470-ba44-74da67dbacdb)
 #### output.jpg
 ![output](https://github.com/SOWMIYA2003/PCA---Mini-Project-Mini-Project---Face-Detection-or-Convert-an-image-into-gray-scale-image-using-CUD/assets/93427443/da81a6db-52e9-4459-84bb-22575ae831e3)
-
+### RESULT :
+Thus a CUDA C Program is executed successfully to convert color image into grey scale image in GPU.
